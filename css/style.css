@@ -1,4 +1,4 @@
-
+/* =Page Structure */
 html{ font-size: 62.5% }
 body{
 	margin: 0;
@@ -16,18 +16,9 @@ h2,h3,h4{
 	font-family: "Proxima Nova", Arial, sans-serif;
 	font-variant: small-caps;
 }
-h2{
-	font-size: 2em;
-}
-h3{
-	font-size: 1.5em;
-}
-img{
-	border-radius: 5px;
-}
-.row{
-	margin: 0;
-}
+h2{ font-size: 2em; }
+h3{ font-size: 1.5em; }
+img{ border-radius: 5px; }
 .def-btn{
 	font-family: "Proxima Nova", Arial, sans-serif;
 	padding: 10px 15px;
@@ -41,6 +32,7 @@ img{
 	background-color: #0c0f21;
 	color: #fcfbf5;
 }
+/* =Navigation */
 .navbar{
 	margin-bottom: 0;
 	position: fixed;
@@ -58,34 +50,26 @@ img{
 	background-size: 100px 100px;
 	background-position: left;
 }
-.navbar-header{
-	padding-left: 20px;
-}
+.navbar-header{ padding-left: 20px; }
+/* =Home Page */
 .cta{
-	background-image: url(../images/main.jpg);
+	background: url(../images/main.jpg) no-repeat center;
 	background-size: cover;
-	background-repeat: no-repeat; 
-	background-position: center;
+	height: 100vh;
 	padding: 0;
 	color: white;
-	height: 100vh;
-	/*Shorthand*/
 }
 .cta-cover{
 	background-color: rgba(12,15,33,.45);
 	height: 100vh;
 	padding-top: 30vh; 
 }
-.jumbotron{
-	background-color: transparent;
-}
+.jumbotron{ background-color: transparent; }
 .jumbotron h2,
 .jumbotron p{
 	margin: 0;
 }
-.featured-container h2{
-	margin: 50px 0;
-}
+.featured-container h2{ margin: 50px 0; }
 .featured-work{
 	background-color: white;
 	width: 90%;
@@ -109,22 +93,17 @@ img{
 	-moz-box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.50);
 	box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.50);
 }
-.featured-work div{
-	padding: 0;
-}
-.featured-title{
-	margin-top: 0;
-}
+.featured-work div{ padding: 0; }
+.featured-title{ margin-top: 0; }
 .featured-desc{
 	line-height: 20px;
 	margin-bottom: 30px;
 }
-#ht{ color: #d05707; }
-#cs{ color: #1d5aa6; }
-#js{ color: #eae20b; }
-.featured-work a[href*="portfolio"]{
-	float: right;
-}
+.ht{ color: #d05707; }
+.cs{ color: #1d5aa6; }
+.js{ color: #eae20b; }
+.featured-work a[href*="portfolio"]{ float: right; }
+/* =Contact Form */
 .contact-banner,
 .contact-page{
 	background-color: #0c0f21;
@@ -132,9 +111,7 @@ img{
 	margin-top: 160px;
 	padding: 20px 0;
 }
-.contact-page{
-	margin-top: 0;
-}
+.contact-page{ margin-top: 0; }
 .contact-wrap{
 	width: 90%;
 	padding: 30px 50px;
@@ -145,46 +122,31 @@ img{
 	margin-right: 5%;
 	padding: 0;
 }
-.contact-message p{
-	line-height: 20px;
-}
-.mail-to{
-	color: #0ce89b;
-}
+.contact-message p{ line-height: 20px; }
+.mail-to{ color: #0ce89b; }
 .contact-message ul{
 	list-style: none;
 	margin-top: 30px;
 	padding: 0;
 	overflow: hidden;
 }
-.contact-message li{
-	float: left;
-}
+.contact-message li{ float: left; }
 .contact-message ul a{
 	display: block;
 	width: 50px;
 	height: 50px;
 	margin-right: 10px;
 	text-indent: -9999px;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: center;
 }
 .contact-message a[href*="bitbucket"]{
 	background-image: url(../images/bitbucket.svg);
-	background-repeat: no-repeat;
 	background-size: 40px;
-	background-position: center;
 }
-.contact-message a[href*="linkedin"]{
-	background-image: url(../images/linkedin.svg);
-	background-repeat: no-repeat;
-	background-size: 50px;
-	background-position: center;
-}
-.contact-message a[href*="twitter"]{
-	background-image: url(../images/twitter.svg);
-	background-repeat: no-repeat;
-	background-size: 50px;
-	background-position: center;
-}
+.contact-message a[href*="linkedin"]{ background-image: url(../images/linkedin.svg); }
+.contact-message a[href*="twitter"]{ background-image: url(../images/twitter.svg); }
 .contact-form{
 	background-color: white;
 	margin-top: -120px;
@@ -195,19 +157,12 @@ img{
 	-moz-box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
 	box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
 }
-.contact-page .contact-form{
-	margin-top: 0;
-}
+.contact-page .contact-form{ margin-top: 0; }
 input:focus,
 textarea:focus{
 	border-left: solid 5px red;
 }
-textarea{
-	resize: none;
-}
-label{
-	display: none;
-}
+label{ display: none; }
 footer{
 	background-color: #00ffee;
 	padding: 50px;
@@ -231,11 +186,8 @@ footer .container{
 .copyright{
 	float: right;
 	width: 50%;
-	background-image: url(../images/logo.svg);
-	background-repeat: no-repeat;
+	background: url(../images/logo.svg) no-repeat 90%;
 	background-size: 100px;
-	background-position: 90%;
-	overflow: visible;
 }
 .copyright ul{
 	list-style: none;
@@ -262,77 +214,10 @@ footer .container{
 	height: 50vh;
 }
 .portfolio{
-	background-image: url(../images/portfolio.jpg);
-	background-position: center;
+	background: url(../images/portfolio.jpg) no-repeat center;
+	background-size: cover;
 }
-.about{
-	background-image: url(../images/about.jpg);
-	background-position: center;
-}
-.contactme{
-	background-image: url(../images/main.jpg);
-}
-.portfolio-cover,
-.about-cover,
-.contactme-cover{
-	background-color: rgba(12,15,33,.45);
-	height: 50vh;
-	padding-top: 12vh; 
-}
-.portfolio-cover h1,
-.about-cover h1,
-.contactme-cover h1{
-	background-repeat: no-repeat;
-	background-position: center 1px;
-	background-size: 70px 70px;
-	padding-top: 80px;
-}
-.portfolio-cover h1{
-	background-image: url(../images/newspaper.svg);
-}
-.about-cover h1{
-	background-image: url(../images/headphones.svg);
-}
-.contactme-cover h1{
-	background-image: url(../images/mailing.svg);
-}
-.portfolio-work img{
-	max-width: 350px;
-	max-height: 220px;
-}
-.portfolio-wrap{
-	margin-top: 60px;
-}
-.about-wrap{
-	margin-top: 60px;
-}
-#portrait{
-	display: block;
-	max-width: 100%;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	-webkit-box-shadow: 0px 14px 13px -2px rgba(0,0,0,0.29);
-	-moz-box-shadow: 0px 14px 13px -2px rgba(0,0,0,0.29);
-	box-shadow: 0px 14px 13px -2px rgba(0,0,0,0.29);
-}
-.bio{
-	padding: 20px;
-	border-radius: 5px;
-	border-top: solid 10px #0ce89b;
-	-webkit-box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
-	-moz-box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
-	box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
-	overflow: hidden;
-}
-.bio p{
-	line-height: 25px;
-}
-.bio a{
-	float: right;
-}
-.portfolio-wrap .row{
-	margin-bottom: 20px;
-}
+.portfolio-wrap .row{ margin-bottom: 20px; }
 .portfolio_article{
 	position: relative;
 	margin-bottom: 60px;
@@ -372,7 +257,8 @@ footer .container{
 	-moz-box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.31);
 	box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.31);
 }
-.fa-bitbucket{
+.fa-bitbucket,
+.fa-github{
 	margin-top: 20px;
 	font-size: 80px;
 }
@@ -381,15 +267,72 @@ footer .container{
 	width: 50%;
 	margin: 20px auto;
 }
-
-
+/* =Contact Me*/
+.contactme{
+	background: url(../images/main.jpg) no-repeat center;
+	background-size: cover;
+}
+.portfolio-cover,
+.about-cover,
+.contactme-cover{
+	background-color: rgba(12,15,33,.45);
+	height: 50vh;
+	padding-top: 12vh; 
+}
+.portfolio-cover h1,
+.about-cover h1,
+.contactme-cover h1{
+	background-repeat: no-repeat;
+	background-position: center 1px;
+	background-size: 70px 70px;
+	padding-top: 80px;
+}
+.portfolio-cover h1{
+	background-image: url(../images/newspaper.svg);
+}
+.about-cover h1{
+	background-image: url(../images/headphones.svg);
+}
+.contactme-cover h1{
+	background-image: url(../images/mailing.svg);
+}
+.portfolio-work img{
+	max-width: 350px;
+	max-height: 220px;
+}
+.portfolio-wrap,
+.about-wrap{
+	margin-top: 60px;
+}
+/* =About Me */
+.about{
+	background: url(../images/about.jpg) no-repeat center;
+	background-size: cover;
+}
+#portrait{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 14px 13px -2px rgba(0,0,0,0.29);
+	-moz-box-shadow: 0px 14px 13px -2px rgba(0,0,0,0.29);
+	box-shadow: 0px 14px 13px -2px rgba(0,0,0,0.29);
+}
+.bio{
+	padding: 20px;
+	border-radius: 5px;
+	border-top: solid 10px #0ce89b;
+	-webkit-box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
+	-moz-box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
+	box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.13);
+	overflow: hidden;
+}
+.bio p{ line-height: 25px; }
+.bio a{ float: right; }
 
 /* ------------------------------------------------ =Media Queries --------------------------------------------- 
 _______________________________________________________________________________________________________________
 _______________________________________________________________________________________________________________ */
-
-
-
 
 @media screen and (max-width: 1199px){
 	.fa-bitbucket{
@@ -416,7 +359,8 @@ ________________________________________________________________________________
 	.contact-message{
 		width: 100%;
 	}
-	.fa-bitbucket{
+	.fa-bitbucket,
+	.fa-github{
 		margin-top: 80px;
 	}
 	.resume{
@@ -454,7 +398,8 @@ ________________________________________________________________________________
 	}
 }
 @media screen and (max-width: 415px){
-	.fa-bitbucket{
+	.fa-bitbucket,
+	.fa-github{
 		margin-top: 20px;
 	}
 	.copyright{
