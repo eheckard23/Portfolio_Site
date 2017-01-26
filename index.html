@@ -3,29 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ethan Heckard</title>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 
-	<!-- Nav -->
-	<nav class="navbar navbar-inverse">
 
-		<div class="container">
 
-			<div class="navbar-header">
-				<a href="index.html" id="logo" class="navbar-brand">Ethan Heckard</a>
-			</div><!-- NavBar header -->
-			
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul><!-- NavBar Right -->
-
-		</div><!-- Container -->
-		
-	</nav> <!-- NavBar -->
+	 <nav class="navbar navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a href="index.html" id="logo" class="navbar-brand">Ethan Heckard</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="index.html">Home</a></li>
+	        <li><a href="portfolio.html">Portfolio</a></li>
+	        <li><a href="about.html">About Me</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 
 	<!-- Header -->
 
@@ -89,7 +96,7 @@
 
 				<h2>Let's Start a Project</h2>
 					<p>If you have any questions or ideas for projects please feel free to contact me and I will get back to you soon.</p>
-					<p>Message me at <span>ethanwheckard@gmail.com</span></p>
+					<p>Message me at <a href="mailto:ethanwheckard@gmail.com" class="mail-to">ethanwheckard@gmail.com</a></p>
 
 					<nav>
 						<ul>
@@ -103,7 +110,7 @@
 
 			<div class="col-md-6 contact-form">
 
-				<form>
+				<form action="mailto:ethanwheckard@gmail.com" method="post" enctype="application/x-www-form-urlencoded">
 						
 						<p class="form-group">
 							<label for="name">Name</label>
@@ -142,14 +149,14 @@
 
 	<div class="container">
 
-		<div class="col-md-6 resume">
+		<div class="col-sm-6 resume">
 
 			<p>Thank you for visiting my personal site. Stick around to see more of my coming works to share.</p>
 			<a href="files/EthanHeckard_Resume.pdf" class="def-btn" download="Ethan Heckard Resume">Download My Resumé</a>
 
 		</div>
 
-		<nav class="col-md-6 copyright">
+		<nav class="col-sm-6 copyright">
 				
 			<ul>
 				<li><a href="index.html">Home</a></li>
