@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Initial project setup
+# -----------------------------------------
 
 # Install dependencies
 npm i
