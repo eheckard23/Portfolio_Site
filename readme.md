@@ -126,9 +126,6 @@ When your work has an unexpected bug that needs to be updated and fixed quickly,
 ## Continuous Integration
 This part of the deployment model is not required but is recommended for ensuring that your code passes any necessary tests before pushing to further stages. If you choose to add this part, begin by visiting and signing up with [Codeship](https://codeship.com/)
 
-[![button](https://user-images.githubusercontent.com/17580530/28239316-adb932e6-6937-11e7-9cdf-f7b17af27091.png)]
-(https://codeship.com/)
-
 A service like Codeship allows you to add and listen for pushes to an existing repository. When you push any commits, Codeship will download a copy of your repo and run any commands you provide, including tests.
 #### Sign in using your GitHub account.
 ![image](https://user-images.githubusercontent.com/17580530/28239348-739a90e0-6938-11e7-8564-e0d456d36506.png)
