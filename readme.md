@@ -1,5 +1,3 @@
-![logo.png](https://bitbucket.org/repo/5KLbee/images/2079112299-logo.png)
-
 # Table of Contents
 * [Overview](#overview)
 * [Installation](#installation)
@@ -23,7 +21,7 @@ Now that you have the project on your machine, `cd` into your project folder, th
 
 `./setup.sh`
 
-This script will also run the project on a local server.
+This script should start your project on a local server, you may run `npm start` as well.
 
 ## Deployment Process
 In order to go through the deployment process properly, follow this branching model:
