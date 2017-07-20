@@ -141,8 +141,8 @@ img{ border-radius: 5px; }
 	background-size: 50px;
 	background-position: center;
 }
-.contact-message a[href*="bitbucket"]{
-	background-image: url(../images/bitbucket.svg);
+.contact-message a[href*="github"]{
+	background-image: url(../images/github.svg);
 	background-size: 40px;
 }
 .contact-message a[href*="linkedin"]{ background-image: url(../images/linkedin.svg); }
