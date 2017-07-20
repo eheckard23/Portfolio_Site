@@ -10,22 +10,22 @@ app.use(express.static(path.join(__dirname, './public')));
 
 // index
 app.get('/', (req,res) => {
-	res.render('index', { title: 'Ethan Heckard' });
+	res.render('index', { title: 'Ethan Heckard | Portolio' });
 });
 
 // about
 app.get('/about', (req,res) => {
-	res.render('about', { title: 'About Me' });
+	res.render('about', { title: 'Ethan Heckard | About Me' });
 });
 
 // contact
 app.get('/contact', (req,res) => {
-	res.render('contact', { title: 'Contact Me' });
+	res.render('contact', { title: 'Ethan Heckard | Contact' });
 });
 
 // portfolio
 app.get('/portfolio', (req,res) => {
-	res.render('portfolio', { title: 'Ethan Heckard Portfolio' });
+	res.render('portfolio', { title: 'Ethan Heckard | Portolio' });
 });
 
 app.set('port', process.env.PORT || 3000);
