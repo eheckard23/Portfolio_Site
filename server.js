@@ -2,12 +2,32 @@ const express = require('express'),
 		path = require('path'),
 		app = express();
 
+// pug templating
+app.set('views', path.join(__dirname, './views'));
+app.set('view engine', 'pug');
 // static html, css, js files
-app.use(express.static('public'));
-// send index on root path
+app.use(express.static(path.join(__dirname, './public')));
+
+// index
 app.get('/', (req,res) => {
-	res.sendFile(path.join(__dirname + '/index.html'));
+	res.render('index', { title: 'Ethan Heckard' });
 });
+
+// about
+app.get('/about', (req,res) => {
+	res.render('about', { title: 'About Me' });
+});
+
+// contact
+app.get('/contact', (req,res) => {
+	res.render('contact', { title: 'Contact Me' });
+});
+
+// portfolio
+app.get('/portfolio', (req,res) => {
+	res.render('portfolio', { title: 'Ethan Heckard Portfolio' });
+});
+
 app.set('port', process.env.PORT || 3000);
 
 // server listener

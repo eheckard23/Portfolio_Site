@@ -1,0 +1,35 @@
+extends template.pug
+
+block content
+
+	section.portfolio
+		div.portfolio-cover
+			div.jumbotron.text-center
+				h1 Portfolio
+
+	section.portfolio-wrap
+		div.container
+				article.col-md-4.portfolio_article
+					img(src="images/hikers.jpg", alt="Work Title")
+					div.article_overlay
+						h4 Hiker's Guide
+						p Understanding the semantics of HTML, and the basic styling of CSS.
+						i.fa.fa-bitbucket.fa-5x(aria-hidden="true")
+						a.def-btn.repository-link(href="https://eheckard23.bitbucket.io/", target="_blank") Live Demo
+
+
+				article.col-md-4.portfolio_article
+					img(src="images/php_work.jpg", alt="Work Title")
+					div.article_overlay
+						h4 &#60;?PHP
+						p Using server-side technology to create and store user information within a database.
+						i(aria-hidden="true").fa.fa-bitbucket
+						a.def-btn.repository-link(href="https://bitbucket.org/eheckard23/heckard_ethan_portfolio", target="_blank") View the code
+
+				article.col-md-4.portfolio_article
+					img(src="images/portfolio_work.jpg", alt="Work Title") 
+					div.article_overlay
+						h4 My Portfolio Site
+						p Fully creating my portfolio site from Photoshop design to implementing the Bootstrap framework.
+						i.fa.fa-bitbucket.fa-5x(aria-hidden="true")
+						a.def-btn.repository-link(href="https://bitbucket.org/eheckard23/portfolio_site" target="_blank") View the code

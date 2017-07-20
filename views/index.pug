@@ -1,0 +1,41 @@
+extends template.pug
+
+block content
+
+	//- Jumbotron
+	section.cta
+		div.cta-cover
+			div.jumbotron.text-center
+				h1 Ethan Heckard
+				p I am a
+				h2 
+					em front/back-end developer
+				p in Orlando, Florida
+
+	//- Featured Work
+	section.featured-container
+		
+		h2.text-center Recent Work
+
+		article.container.featured-work
+			
+			h3.featured-title Hiker's Guide
+			p January 12, 2017
+			
+			//- Featured Image
+			div.col-md-6.featured-img
+				a(href="https://eheckard23.bitbucket.io/", target="_blank")
+					img(src="images/hikers.jpg", alt="Hiker's Guide")
+					p Click to see full project
+			
+			div.col-md-6
+				p.featured-desc The start of my front-end design work began only a few months ago. Before that I didn’t really know much at all in the way of structuring and designing my work properly. But even in the little amount of time between then and now I have gained so much knowledge and understanding of how this stuff all works. I still have a ways to go yet, but I have a few works that I’m proud to show for now, and have much more to add in the future.
+
+				p
+					b Skills Used:
+				p
+					span.ht HTML5 / 
+					span.cs CSS3 / 
+					span.js JavaScript
+
+				a.def-btn(href="/portfolio") Full Portfolio
