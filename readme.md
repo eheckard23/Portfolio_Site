@@ -3,7 +3,7 @@
 * [Installation](#installation)
 * [Deployment Process](#deployment-process)
 * [Versioning](https://github.com/eheckard23/Portfolio_Site/blob/master/Versioning.md)
-* [Continuous Integration](https://github.com/eheckard23/Portfolio_Site/blob/master/Versioning.md)
+* [Continuous Integration](https://github.com/eheckard23/Portfolio_Site/blob/master/Continuous_Integration.md)
 
 ## Overview
 This guide will go over the process of installing this application onto your local machine to deploying to a live production server.
@@ -80,7 +80,7 @@ Connect your staging application to your GitHub account. You should be able to s
 ![image](https://user-images.githubusercontent.com/17580530/28242204-81421cdc-6973-11e7-9058-c873637e1d40.png)
 
 #### Auto Deployment
-Once your repository is added, enable auto deployment **from your release branch**. If you have tests running through Codeship ([follow this guide](https://github.com/eheckard23/Portfolio_Site/blob/master/Versioning.md)), you should check the box asking to wait for CI to pass before it deploys to the server.
+Once your repository is added, enable auto deployment **from your release branch**. If you have tests running through Codeship ([follow this guide](https://github.com/eheckard23/Portfolio_Site/blob/master/Continuous_Integration.md)), you should check the box asking to wait for CI to pass before it deploys to the server.
 
 > If you don't see your release branch listed in the options, you may need to `push` that branch up to the repository.
 
