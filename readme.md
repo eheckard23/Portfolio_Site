@@ -101,49 +101,7 @@ If all the necessary changes or fixes to the **release** branch are made and the
 
 Simply click the **Promote to prodcution** button and Heroku will deploy your staging application to a live, production server. You should now have 2 separate links to see the staging application and production application running in the browser.
 
-## Versioning
-At any point in your work you are going to be making changes big or small to the project. It is important to use the following commands whenever you've made these changes, which are categorized in 3 ways:
 
-> Included in the project is a **gulpfile.js** that has a `bump` task for updating the project version, as well as running a `git tag` with that specific version. After you have pushed your changes to the repo, use the commands below that correspond to the type of version you are working on.
 
-### Major
-When your work functions as planned, but has enough changes to the point that an earlier version does not work the same, this is considered a major release.
-
-`gulp bump --v=0`
-
-### Minor
-When your work functions as planned, but has only improved on smaller areas of the code that do not alter the overall structure of the project, this is considered to be a minor release. An earlier version should still work along side this the same way, with some smaller improvements.
-
-`gulp bump --v=1`
-
-### Patch
-When your work has an unexpected bug that needs to be updated and fixed quickly, this is considered to be a patch release.
-
-`gulp bump --v=2`
-
-## Continuous Integration
-This part of the deployment model is not required but is recommended for ensuring that your code passes any necessary tests before pushing to further stages. If you choose to add this part, begin by visiting and signing up with [Codeship](https://codeship.com/)
-
-A service like Codeship allows you to add and listen for pushes to an existing repository. When you push any commits, Codeship will download a copy of your repo and run any commands you provide, including tests.
-#### Sign in using your GitHub account.
-![image](https://user-images.githubusercontent.com/17580530/28239348-739a90e0-6938-11e7-8564-e0d456d36506.png)
-#### Create a new project using GitHub
-![image](https://user-images.githubusercontent.com/17580530/28239363-b7dde784-6938-11e7-8ee9-f9b8a2ccb5fd.png)
-#### Copy and paste your repository's clone URL and hit Connect
-![image](https://user-images.githubusercontent.com/17580530/28239368-c9d0dd2a-6938-11e7-8a31-110ec4360485.png)
-#### Select the Basic plan and you should now be able to add your commands
-I won't go into detail how extensive these commands can be, but in my simple case of making sure that my Mocha tests are passing, my commands would look like this...
-
-##### Setup Commands
-These commands are run before Codeship will run any designated tests.
-
-***Be sure to substitute whichever version of Node your project is currently using where it says 6.9.4. You can check for the version by running `node -v` in your project folder.***
-
-![image](https://user-images.githubusercontent.com/17580530/28239463-c5344aca-693a-11e7-987a-8054155f2c2c.png)
-##### Test Commands
-These commands are where you can specify which tests you want Codeship to actually run. In my case I want **all** mocha tests in my *test* folder to run:
-![image](https://user-images.githubusercontent.com/17580530/28239514-e35a9044-693b-11e7-91fa-17619dfd35c9.png)
-
-Once you're done with that, you should be able to start pushing to your repository and seeing the tests run in Codeship at the same time.
 
 
