@@ -3,24 +3,24 @@ html{ font-size: 62.5% }
 body{
 	margin: 0;
 	padding: 0;
-	font: 1.4rem "Mrs Eaves OT", Arial, sans-serif;
+	font: 1.4rem "Roboto", Arial, sans-serif;
 	background-color: #fcfbf5;
 	color: #0c0f21;
 }
 h1{
-	font: 2.4em "Mrs Eaves OT", Georgia, serif;
+	font: 2.4em "Rubik", Georgia, serif;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 }
 h2,h3,h4{
-	font-family: "Proxima Nova", Arial, sans-serif;
+	font-family: "Rubik", Arial, sans-serif;
 	font-variant: small-caps;
 }
 h2{ font-size: 2em; }
 h3{ font-size: 1.5em; }
 img{ border-radius: 5px; }
 .def-btn{
-	font-family: "Proxima Nova", Arial, sans-serif;
+	font-family: "Rubik", Arial, sans-serif;
 	padding: 10px 15px;
 	background-color: #00ffee;
 	color: #0c0f21;
@@ -37,7 +37,6 @@ img{ border-radius: 5px; }
 	margin-bottom: 0;
 	position: fixed;
 	width: 100%;
-	top: 40px;
 	background-color: rgba(12,15,33,.95);
 	border: none;
 	border-radius: 0;
